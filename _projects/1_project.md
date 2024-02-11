@@ -5,7 +5,7 @@ description: Deciphering the star formation in the outer Galaxy
 img: assets/img/MW_OGHReS.jpg
 importance: 1
 category: work
-related_publications: einstein1956investigations, einstein1950meaning
+related_publications: 2023MNRAS.tmp.3808U
 ---
 
 <div class="row">
