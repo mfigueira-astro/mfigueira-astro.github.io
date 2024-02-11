@@ -31,13 +31,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Node.js for Mermaid CLI
-        uses: actions/setup-node@v3
-        with:
-          node-version: "14"
-
-      - name: Install Mermaid CLI
-        run: npm install -g @mermaid-js/mermaid-cli
 
       - name: Install Python for Jupyter
         uses: actions/setup-python@v4
