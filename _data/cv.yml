@@ -2,13 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Junais
+      value: Miguel Figueira Sebastiao
     - name: Position
-      value: Postdoctoral researcher      
+      value: Associate researcher      
     - name: Email
-      value: junais@ncbj.gov.pl
-    - name: Phone
-      value: +48 571033083
+      value: miguel.figueira@ncbj.gov.pl
       
 - title: Experience
   type: time_table
