@@ -10,24 +10,10 @@ related_publications: einstein1956investigations, einstein1950meaning
 
 OGHReS (Outer Galaxy High Resolution Survey) is a large scale (100 deg2) molecular line APEX legacy survey of the outer Galaxy (see green shaded region in the figure to the right). The main aims of the survey are to investigate star formation in the outer Galaxy and constrain the large scale structure and dynamics of the Milky Way. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-4">.col-6</div>
+    <div class="col-8">
+    {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}    
     </div>
 </div>
 <div class="caption">
