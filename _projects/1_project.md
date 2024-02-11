@@ -8,12 +8,12 @@ category: work
 related_publications: einstein1956investigations, einstein1950meaning
 ---
 
-OGHReS (Outer Galaxy High Resolution Survey) is a large scale (100 deg2) molecular line APEX legacy survey of the outer Galaxy (see green shaded region in the figure to the right). The main aims of the survey are to investigate star formation in the outer Galaxy and constrain the large scale structure and dynamics of the Milky Way. 
-
 <div class="row">
-    <div class="col-4">.col-6</div>
+    <div class="col-4">
+    OGHReS (Outer Galaxy High Resolution Survey) is a large scale (100 deg2) molecular line APEX legacy survey of the outer Galaxy (see green shaded region in the figure to the right). The main aims of the survey are to investigate star formation in the outer Galaxy and constrain the large scale structure and dynamics of the Milky Way.     
+    </div>
     <div class="col-8">
-    {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}    
+    {% include figure.html path="assets/img/oghres_coverage.jpg" title="example image" class="img-fluid rounded z-depth-1" %}    
     </div>
 </div>
 <div class="caption">
