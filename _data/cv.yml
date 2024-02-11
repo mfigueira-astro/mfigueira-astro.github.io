@@ -15,7 +15,17 @@
       institution: Astrophysics division (BP4) of the National Center for Nuclear Research (NCBJ), Warsaw, Poland
       year: 07/2018 - now
       description:
-        - Star formation in the Milky Way and galaxy evolution at intermediate redshift
+        - Star formation in the Milky Way and Galaxy evolution at intermediate redshift
+    - title: Guest scientist
+      institution: Max Planck Institute for Radio Astronomy, Bonn, Germany
+      year: 03/2024 - now
+      description:
+        - The Outer Galaxy High Resolution Survey        
+    - title: Postdoctoral fellow
+      institution: Nicolaus Copernicus University, Toruń, Poland
+      year: 01/2021 - 07/2021
+      description:
+        - SOFIA/FIFI-LS observations of the Gy3-7 region and DR21 outflow       
         
 - title: Education
   type: time_table
