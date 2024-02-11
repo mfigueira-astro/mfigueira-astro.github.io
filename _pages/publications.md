@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: <a href='https://ui.adsabs.harvard.edu/public-libraries/rTaH98YmTs6-aZoxtV7WXg'>ADS Library</a>
-nav: true
+title: Publications
+description: <a href='https://ui.adsabs.harvard.edu/public-libraries/TXWeVW2YSm6UC0Ten651Xg'>ADS Library</a>
+nav: tru
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
