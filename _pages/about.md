@@ -1,5 +1,5 @@
 ---
-layout: About
+layout: about
 title: About
 permalink: /
 subtitle: Postdoctoral researcher <br /> <a href='https://www.ncbj.gov.pl/en/bp4'>NCBJ, Poland</a> <br /> <hr>
