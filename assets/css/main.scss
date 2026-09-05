@@ -18,3 +18,68 @@ $max-content-width: {{ site.max_width }};
   "font-awesome/solid",
   "font-awesome/regular"
 ;
+
+// -----------------------------------------------------------------------------
+// Custom: left sidebar navigation instead of top navbar
+// -----------------------------------------------------------------------------
+$sidebar-width: 220px;
+
+@media (min-width: 576px) {
+  body.fixed-top-nav {
+    padding-top: 0;
+    padding-left: $sidebar-width;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $sidebar-width;
+    height: 100vh;
+    border-bottom: none;
+    border-right: 1px solid var(--global-divider-color);
+    overflow-y: auto;
+  }
+
+  #navbar .container {
+    max-width: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.2rem;
+  }
+
+  #navbar .navbar-brand {
+    margin-bottom: 2rem;
+    white-space: normal;
+  }
+
+  #navbar .navbar-toggler {
+    display: none;
+  }
+
+  #navbar .navbar-collapse {
+    display: block !important;
+    width: 100%;
+  }
+
+  #navbar .navbar-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100%;
+  }
+
+  #navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 0;
+  }
+
+  #navbar .toggle-container {
+    margin-top: auto;
+  }
+
+  footer {
+    margin-left: $sidebar-width;
+  }
+}
