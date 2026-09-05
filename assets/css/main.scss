@@ -31,15 +31,21 @@ $sidebar-width: 220px;
   }
 
   #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: $sidebar-width;
-    height: 100vh;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+    width: $sidebar-width !important;
+    height: 100vh !important;
     border-bottom: none;
     border-right: 1px solid var(--global-divider-color);
     overflow-y: auto;
+  }
+
+  header {
+    height: 0;
+    overflow: visible;
   }
 
   #navbar .container {
