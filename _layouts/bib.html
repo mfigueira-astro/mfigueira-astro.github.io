@@ -32,7 +32,13 @@
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
         <!-- Title -->
-        <div class="title">{{entry.title}}</div>
+        <div class="title">
+        {%- if entry.doi -%}
+        <a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a>
+        {%- else -%}
+        {{ entry.title }}
+        {%- endif -%}
+        </div>
         <!-- Author -->
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
@@ -113,7 +119,8 @@
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
         {% if entry.type == "article" -%}
-          {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+          {%- assign journal_display = entry.journal | replace: "\aap", "Astronomy & Astrophysics" | replace: "\mnras", "Monthly Notices of the Royal Astronomical Society" -%}
+{%- capture entrytype -%}<em>{{ journal_display }}</em>{%- endcapture -%}
         {%- elsif proceedings contains entry.type -%}
           {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
@@ -128,7 +135,11 @@
           {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
         {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+        {%- capture volpage -%}
+        {%- if entry.volume -%}, {{ entry.volume }}{%- endif -%}
+        {%- if entry.pages -%}, {{ entry.pages }}{%- endif -%}
+        {%- endcapture -%}
+        {%- capture periodical -%}{{ entrytype }}{{ volpage }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
         <div class="periodical">
           {{ periodical | strip }}
         </div>
@@ -148,8 +159,11 @@
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           {%- endif %}
           {%- if entry.html %}
-            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">PAPER LINK</a>
+            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">adsurl</a>
           {%- endif %}
+          {%- if entry.doi %}
+          <div class="periodical">doi: <a href="https://doi.org/{{ entry.doi }}">{{ entry.doi }}</a></div>
+          {%- endif %}        
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}
             <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>

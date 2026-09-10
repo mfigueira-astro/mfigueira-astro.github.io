@@ -1,0 +1,78 @@
+{
+  "basics": {
+    "name": "Junais",
+    "Position": "Postdoctoral Researcher",
+    "image": "",
+    "email": "junais@ncbj.gov.pl",
+    "phone": "+48571033083",
+    "url": "https://junais-astro.github.io/",
+    "summary": "",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Astrophysics division (BP4) of the National Center for Nuclear Research (NCBJ), Warsaw, Poland",
+      "position": "Postdoctoral researcher (Assistant Professor)",
+      "url": "https://www.ncbj.gov.pl/bp4/dr-junais",
+      "startDate": "2021-12-01",
+      "endDate": "now",
+      "summary": "Constraining dust attenuation in low surface brightness galaxies using multi-wavelength photometric data and spectral energy distribution fitting techniques",
+    }
+  ],
+  "education": [
+    {
+      "institution": "Laboratoire d'Astrophysique de Marseille (LAM), France",
+      "area": "Astrophysics and Cosmology",
+      "studyType": "Ph.D.",
+      "startDate": "2018-10-01",
+      "endDate": "2021-09-22"
+    },
+    {
+      "institution": "Aix Marseille University, Marseille, France",
+      "area": "Astrophysics",
+      "studyType": "Masters",
+      "startDate": "2016-10-01",
+      "endDate": "2018-09-30"
+    },
+    {
+      "institution": "University of Delhi, Hindu College, New Delhi, India",
+      "area": "Physics",
+      "studyType": "Bachelors (with Honours)",
+      "startDate": "2013-06-01",
+      "endDate": "2016-06-30"
+    }
+  ]
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    },
+    {
+      "language": "Malayalam",
+      "fluency": "Native"
+    }
+    {
+      "language": "Malayalam",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}

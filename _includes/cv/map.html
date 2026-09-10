@@ -1,27 +1,26 @@
-<table class="table table-cv table-sm table-borderless table-responsive">
+<div class="map-container">
+<table class="table table-cv table-sm table-borderless">
     {% for content in entry.contents %}
+      {% unless content.float %}
       <tr>
         <td class="p-1 pr-2 font-weight-bold"><b>{{ content.name }}</b></td>
         {% if content.value %}
         <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
         {% endif %}
-        {% if content.links %}
-        <td class="p-1 pl-2 font-weight-light text">
-          <div class="container-pdf">
-          {% for item in content.links %}
-              {% if item.link %}
-                <div class="container-link-button">
-                  {% if item.name %}
-                    <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">{{ item.name}}</a>
-                  {% else %}
-                    <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">doc</a>
-                  {% endif %}
-                </div>
-              {% endif %}
-          {% endfor %}
-          </div>
-        </td>
-        {% endif %}
       </tr>
+      {% endunless %}
     {% endfor %}
 </table>
+
+{% for content in entry.contents %}
+  {% if content.float %}
+    <div class="container-pdf-float">
+      {% for item in content.links %}
+        {% if item.link %}
+          <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">{{ item.name }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+</div>

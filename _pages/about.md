@@ -18,7 +18,7 @@ profile:
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
 I am an astrophysicist currently working at the National Centre for Nuclear Research in Warsaw. I am mainly interested in the formation of stars in the Milky Way, in particular those forming around Galactic ionized bubbles, and in the formation and evolution of galaxies. As an observer, I am using data from ground based and space telescopes from the near-infrared to the radio range of wavelength (Spitzer, Herschel, ALMA) to better understand the star-formation mechanisms and the processes involved in the evolution of galaxies.

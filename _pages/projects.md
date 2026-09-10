@@ -2,11 +2,11 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Astrophysics projects
+description:
 nav: true
 nav_order: 2
-display_categories: [work, fun]
-horizontal: false
+display_categories: 
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
@@ -20,7 +20,7 @@ horizontal: false
   <!-- Generate cards for each project -->
   {% if page.horizontal -%}
   <div class="container">
-    <div class="row row-cols-2">
+    <div class="row row-cols-1 no-gutters">
     {%- for project in sorted_projects -%}
       {% include projects_horizontal.html %}
     {%- endfor %}
@@ -41,7 +41,7 @@ horizontal: false
   <!-- Generate cards for each project -->
   {% if page.horizontal -%}
   <div class="container">
-    <div class="row row-cols-2">
+    <div class="row row-cols-1 no-gutters">
     {%- for project in sorted_projects -%}
       {% include projects_horizontal.html %}
     {%- endfor %}

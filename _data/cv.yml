@@ -4,9 +4,14 @@
     - name: Full Name
       value: Miguel Figueira Sebastiao
     - name: Position
-      value: Associate researcher      
+      value: Associate researcher
     - name: Email
       value: miguel.figueira@ncbj.gov.pl
+    - name:
+      float: true
+      links:
+        - name: <img src="/assets/img/Etoile-zombie.png" alt="Download CV" class="pdf-icon-img">
+          link: /assets/pdf/CV_miguel.pdf
       
 - title: Experience
   type: time_table
@@ -18,7 +23,7 @@
         - Star formation in the Milky Way and Galaxy evolution at intermediate redshift
     - title: Guest scientist
       institution: Max Planck Institute for Radio Astronomy, Bonn, Germany
-      year: 03/2024 - now
+      year: 03/2024 - 08/2025
       description:
         - The Outer Galaxy High Resolution Survey        
     - title: Postdoctoral fellow
