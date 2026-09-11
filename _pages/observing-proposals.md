@@ -9,12 +9,12 @@ description:
 
 <div class="publications">
 
-<p class="proposals-summary">26 proposals (2015–2026) across ALMA, APEX, Effelsberg, IRAM, IRAM-30M, IRAM-30m, JCMT, and YEBES.</p>
+<p class="proposals-summary">26 proposals (2015–2026) across ALMA, APEX, Effelsberg, IRAM-30m, JCMT, and YEBES.</p>
 
 <h2>2026</h2>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">DREAM: Dust pRoperties Explored Across galactic Metallicity boundaries {% assign _tel = "IRAM" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">IRAM</abbr>{% endif %}</div>
+  <div class="prop-title">DREAM: Dust pRoperties Explored Across galactic Metallicity boundaries {% assign _tel = "IRAM-30m" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">IRAM-30m</abbr>{% endif %}</div>
   <div class="periodical">PI: Wonju Kim</div>
 </div>
 
@@ -36,12 +36,12 @@ description:
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Exploring Dust Properties in the Outer Galaxy {% assign _tel = "IRAM-30M" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">IRAM-30M</abbr>{% endif %}</div>
+  <div class="prop-title">Exploring Dust Properties in the Outer Galaxy {% assign _tel = "IRAM-30m" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">IRAM-30m</abbr>{% endif %}</div>
   <div class="periodical">PI: Wonju Kim</div>
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Impact of low-metallicity on the deuterium fractionation in the outer Galaxy {% assign _tel = "IRAM-30M" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">IRAM-30M</abbr>{% endif %}</div>
+  <div class="prop-title">Impact of low-metallicity on the deuterium fractionation in the outer Galaxy {% assign _tel = "IRAM-30m" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">IRAM-30m</abbr>{% endif %}</div>
   <div class="periodical">PI: Agata Karska</div>
 </div>
 
