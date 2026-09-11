@@ -31,6 +31,7 @@ import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+import os
 
 CVITEM_RE = re.compile(
     r"\\cvitem\{(?P<year>\d{4})\}\{"
@@ -225,10 +226,11 @@ def main():
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root)
-    output_path = Path(args.output) if args.output else repo_root / "../_pages" / "observing-proposals.md"
-    css_path = Path(args.css) if args.css else repo_root / "../assets" / "css" / "main.scss"
+    output_path = Path(args.output) if args.output else repo_root / "mfigueira-astro.github.io/_pages" / "observing-proposals.md"
+    os.system("pwd")
+    css_path = Path(args.css) if args.css else repo_root / "mfigueira-astro.github.io/assets" / "css" / "main.scss"
     telescopes_path = (
-        Path(args.telescopes_data) if args.telescopes_data else repo_root / "../_data" / "telescopes.yml"
+        Path(args.telescopes_data) if args.telescopes_data else repo_root / "mfigueira-astro.github.io/_data" / "telescopes.yml"
     )
 
     text = Path(args.input).read_text(encoding="utf-8")

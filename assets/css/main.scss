@@ -149,16 +149,11 @@ $max-content-width: {{ site.max_width }};
 }
 
 .projects .card img {
-  max-height: 430px;
+  height: 300px;
+  max-height: 500px;
   object-fit: cover;
   width: 100%;
   display: block;
-}
-
-.projects .card {
-  border: 8px solid #560F91;
-  border-radius: 16px;
-  overflow: hidden;
 }
 
 .projects .card-img {
@@ -169,15 +164,11 @@ $max-content-width: {{ site.max_width }};
 
 .projects .card-img figure {
   margin: 0;
-  width: 100%;
+  width: 120%;
 }
 
 .projects .card .row > div:not(.card-img) {
   align-self: flex-start;
-}
-
-.projects .card-title {
-  text-align: center;
 }
 
 // -----------------------------------------------------------------------------
@@ -233,6 +224,8 @@ img.pdf-icon-img {
   border-radius: 12px;
   overflow: hidden;
   transition: border-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects .card:hover {
@@ -240,33 +233,36 @@ img.pdf-icon-img {
   transform: translateY(-2px);
 }
 
+.projects .card img {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  margin-top: auto;
+}
+
 .projects .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .projects .card-title {
   text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.3;
+  min-height: 2.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
-.projects .card-text {
-  text-align: left;
-  color: var(--global-text-color-light);
-  line-height: 1.6;
-}
-
-.projects .card-text::after {
-  content: "View project →";
-  display: block;
-  margin-top: 1.5rem;
-  color: var(--global-theme-color);
-  font-size: 0.9rem;
-  font-weight: 600;
+.projects .card figure {
+  margin: 0;
+  line-height: 0;
 }
 
 body:not(.pg-publications) .publications h2 {
@@ -330,4 +326,42 @@ body:not(.pg-publications) .publications h2 {
   line-height: 0.5;
   vertical-align: -0.23em;
   margin-right: 0.3em;
+}
+
+.proposals-intro {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.proposals-summary {
+  margin: 0;
+  flex: 1;
+}
+
+.proposals-intro img {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .proposals-intro {
+    flex-direction: row;
+  }
+
+  .proposals-intro img {
+    width: 150px;
+  }
+}
+
+.email-icon {
+  width: 120px;
+  height: 100px;
+}
+.orcid-icon {
+  width: 120px;
+  height: 100px;
 }

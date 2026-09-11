@@ -589,6 +589,13 @@ footer.sticky-bottom {
       }
     }
   }
+  
+  .card-title {
+    font-size: 2.6rem;
+    font-style: italic;
+    text-align: center;
+  }
+    
 
   .card {
     img {
@@ -605,12 +612,29 @@ footer.sticky-bottom {
       align-items: center;
     }
   }
+  
+    .grid {
+      padding-left: 90px;
+      margin-top: 90px;
+    }    
 
+.grid-sizer,
+.grid-item {
+  width: calc(50% - 150px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
   .grid-sizer,
   .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
+    width: 100%;
   }
+
+    .grid {
+      padding-left: 0;
+    }  
+  
+}
 
   h2.category {
     color: var(--global-divider-color);

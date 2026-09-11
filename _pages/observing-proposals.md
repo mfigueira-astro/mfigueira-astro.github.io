@@ -73,7 +73,6 @@ description:
 <div class="card mt-3 p-3">
   <div class="prop-title">The interplay of galaxy interactions and reduced gravitational potential shaping molecular cloud properties in the extreme outer Galaxy {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
   <div class="periodical">PI: Dario Colombo</div>
-  <div class="periodical">Related papers: <a href="https://doi.org/10.1051/0004-6361/202346396">1</a>, <a href="https://doi.org/10.1051/0004-6361/202346396">2</a></div>
 </div>
 
 <h2>2024</h2>
@@ -145,15 +144,15 @@ description:
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
-  <div class="periodical">PI: Leonardo Bronfman</div>
+  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 (PI: Leonardo Bronfman)}\vspace*{0.05cm {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
+  <div class="periodical">PI: </div>
 </div>
 
 <h2>2015</h2>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
-  <div class="periodical">PI: Leonardo Bronfman</div>
+  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 (PI: Leonardo Bronfman)}\vspace*{0.05cm {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
+  <div class="periodical">PI: </div>
 </div>
 
 </div>
