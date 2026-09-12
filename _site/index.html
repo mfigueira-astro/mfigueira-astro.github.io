@@ -162,23 +162,24 @@ I received a NCN SONATA grant (“The impact of massive stars: from the Milky Wa
           
 
 <!-- Social -->
-<div class="social">
+<footer class="page-footer">
   <div class="contact-icons">
     <a href="mailto:%6D%69%67%75%65%6C.%66%69%67%75%65%69%72%61@%6E%63%62%6A.%67%6F%76.%70%6C" title="email">
-  <img src="/assets/img/social-icons/etoile_postman.png" alt="email" class="social-icon-img email-icon">
-</a>
+			  <img src="/assets/img/social-icons/etoile_postman.png" alt="email" class="social-icon-img email-icon">
+			</a>
             <a href="https://orcid.org/0000-0002-9068-6215" title="ORCID" rel="external nofollow noopener" target="_blank">
-            <img src="/assets/img/social-icons/etoile_orcid.png" alt="orcid" class="ai ai-orcid orcid-icon">
-            </a><a href="https://www.linkedin.com/in/Miguel%20Figueira%20Sebastiao" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://instagram.com/astrophymiguel" title="Instagram" rel="external nofollow noopener" target="_blank"><i class="fab fa-instagram"></i></a>
+            <img src="/assets/img/social-icons/etoile_orcid.png" alt="orcid" class="social-icon-img orcid-icon">
+            </a><a href="https://www.linkedin.com/in/Miguel%20Figueira%20Sebastiao" title="LinkedIn" rel="external nofollow noopener" target="_blank">
+            <img src="/assets/img/social-icons/etoile_linkedin.png" alt="linkedin" class="social-icon-img linkedin-icon">
+            </a>
+            <a href="https://instagram.com/astrophymiguel" title="Instagram" rel="external nofollow noopener" target="_blank">
+  <img src="/assets/img/social-icons/etoile_instagram.png" alt="instagram" class="social-icon-img instagram-icon">
+</a>
             <a href="/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
             
 
   </div>
-  <div class="contact-note">
-    
-  </div>
-</div>
+</footer>
         </article>
 
 </div>
@@ -234,5 +235,21 @@ I received a NCN SONATA grant (“The impact of massive stars: from the Milky Wa
     
 
     
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.bibliography li').forEach((el, i) => {
+    el.style.animationDelay = `${Math.min(i * 0.15, 1)}s`;
+  });
+});
+</script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.publications .card').forEach((el, i) => {
+    el.style.animationDelay = `${Math.min(i * 0.15, 1)}s`;
+  });
+});
+</script>
+
   </body>
 </html>

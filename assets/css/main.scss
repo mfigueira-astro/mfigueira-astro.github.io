@@ -358,12 +358,12 @@ body:not(.pg-publications) .publications h2 {
 }
 
 .email-icon {
-  width: 120px;
-  height: 100px;
+  width: 140px;
+  height: 120px;
 }
 .orcid-icon {
-  width: 120px;
-  height: 100px;
+  width: 140px;
+  height: 120px;
 }
 
 .social .contact-icons {
@@ -372,4 +372,72 @@ body:not(.pg-publications) .publications h2 {
   align-items: center;
   width: 100%;
   padding: 2em 0;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em 0;
+  background: var(--global-bg-color); // or whatever your theme's bg variable is
+  z-index: 100;
+  margin-left: 8em;
+}
+
+.page-footer .contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+}
+
+.about-content, main {
+  padding-bottom: 5em; // roughly the footer's height + margin
+}
+
+.page-footer .contact-icons a {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.page-footer .contact-icons a:nth-child(1) { animation-delay: 0.2s; }
+.page-footer .contact-icons a:nth-child(2) { animation-delay: 0.4s; }
+.page-footer .contact-icons a:nth-child(3) { animation-delay: 0.6s; }
+.page-footer .contact-icons a:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bibliography li {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.publications .card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }

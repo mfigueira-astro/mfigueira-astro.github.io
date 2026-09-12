@@ -291,5 +291,21 @@
     
 
     
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.bibliography li').forEach((el, i) => {
+    el.style.animationDelay = `${Math.min(i * 0.15, 1)}s`;
+  });
+});
+</script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.publications .card').forEach((el, i) => {
+    el.style.animationDelay = `${Math.min(i * 0.15, 1)}s`;
+  });
+});
+</script>
+
   </body>
 </html>
