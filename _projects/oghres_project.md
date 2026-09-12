@@ -2,7 +2,7 @@
 layout: page
 title: The Outer Galaxy High Resolution Survey
 description: Deciphering the star formation in the outer Galaxy
-img: assets/img/MW_OGHReS.jpg
+img: assets/img/galaxy_red.jpg
 importance: 1
 category: work
 related_publications: 2023MNRAS.tmp.3808U
