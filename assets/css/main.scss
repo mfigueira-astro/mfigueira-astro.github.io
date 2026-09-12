@@ -456,3 +456,27 @@ body:not(.pg-publications) .publications h2 {
   opacity: 0.85;
 }
 
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social-label {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--global-text-color-light);
+  line-height: 1.4;
+  word-break: break-word;
+}
+
