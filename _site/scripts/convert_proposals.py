@@ -147,6 +147,10 @@ def render_body(entries) -> str:
         by_year[e["year"]].append(e)
 
     out = [render_summary(entries)]
+        
+    out.append(f' <div id="telescope-bar" style="display: flex; width: 100%; height: 56px; border-radius: 6px; overflow: hidden; margin-bottom: 1em;"></div>\n')
+    out.append(f' <div id="telescope-legend" style="display: flex; flex-wrap: wrap; gap: 1em; margin-bottom: 2em;"></div>\n')
+    
     for year in sorted(by_year.keys(), reverse=True):
         out.append(f"<h2>{year}</h2>\n")
         year_entries = sorted(by_year[year], key=lambda e: e["title"].lower())
@@ -226,7 +230,9 @@ def main():
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root)
+    print(repo_root)
     output_path = Path(args.output) if args.output else repo_root / "mfigueira-astro.github.io/_pages" / "observing-proposals.md"
+    print(output_path)
     os.system("pwd")
     css_path = Path(args.css) if args.css else repo_root / "mfigueira-astro.github.io/assets" / "css" / "main.scss"
     telescopes_path = (

@@ -11,6 +11,10 @@ description:
 
 <p class="proposals-summary">26 proposals (2015–2026) across ALMA, APEX, Effelsberg, IRAM-30m, JCMT, and YEBES.</p>
 
+ <div id="telescope-bar" style="display: flex; width: 100%; height: 56px; border-radius: 6px; overflow: hidden; margin-bottom: 1em;"></div>
+
+ <div id="telescope-legend" style="display: flex; flex-wrap: wrap; gap: 1em; margin-bottom: 2em;"></div>
+
 <h2>2026</h2>
 
 <div class="card mt-3 p-3">

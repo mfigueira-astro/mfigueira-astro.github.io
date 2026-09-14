@@ -161,7 +161,7 @@ def render_body(entries):
 def page_header():
     return """---
 layout: page
-title: Talks / Seminars
+title: Talks / Seminars / Posters
 permalink: /talks/
 nav: true
 nav_order: 6
@@ -181,8 +181,8 @@ def main():
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root)
-    output_path = Path(args.output) if args.output else repo_root / "../_pages" / "talks.md"
-
+    output_path = Path(args.output) if args.output else repo_root / "mfigueira-astro.github.io/_pages" / "talks.md"
+    print("W",output_path)
     text = Path(args.input).read_text(encoding="utf-8")
     entries = parse_entries(text)
     if not entries:

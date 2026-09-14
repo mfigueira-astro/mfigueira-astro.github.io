@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Seminars / Talks / Posters
+title: Talks / Seminars / Posters
 permalink: /talks/
 nav: true
 nav_order: 6
