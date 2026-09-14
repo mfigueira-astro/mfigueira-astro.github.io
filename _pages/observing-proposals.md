@@ -144,15 +144,15 @@ description:
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 (PI: Leonardo Bronfman)}\vspace*{0.05cm {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
-  <div class="periodical">PI: </div>
+  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
+  <div class="periodical">PI: Leonardo Bronfman</div>
 </div>
 
 <h2>2015</h2>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 (PI: Leonardo Bronfman)}\vspace*{0.05cm {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
-  <div class="periodical">PI: </div>
+  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 {% assign _tel = "APEX" %}{% if site.data.telescopes[_tel] %}<abbr class="badge" style="background-color:{{ site.data.telescopes[_tel].color }}">{{ _tel }}</abbr>{% else %}<abbr class="badge">APEX</abbr>{% endif %}</div>
+  <div class="periodical">PI: Leonardo Bronfman</div>
 </div>
 
 </div>

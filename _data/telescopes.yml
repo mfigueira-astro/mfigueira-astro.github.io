@@ -1,10 +1,28 @@
 "APEX":
   color: "#c0392b"
-"IRAM-30M":
+  lat: -23.0058
+  lon: -67.7592
+"IRAM-30m":
   color: "#2980b9"
+  lat: 37.0662
+  lon: -3.3927
 "ALMA":
   color: "#27ae60"
+  lat: -23.0234
+  lon: -67.7538
 "NOEMA":
   color: "#8e44ad"
+  lat: 44.6339
+  lon: 5.9081
 "JCMT":
   color: "#d35400"
+  lat: 19.8225
+  lon: -155.4770
+"YEBES":
+  color: "#ad00a8"
+  lat: 40.5247
+  lon: -3.0889
+"Effelsberg":
+  color: "#ebe300"
+  lat: 50.5248
+  lon: 6.8828

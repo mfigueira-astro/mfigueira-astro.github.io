@@ -90,6 +90,9 @@
                 <a class="nav-link" href="/observing-proposals/">Observing Proposals<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
+                <a class="nav-link" href="/outreach/">Outreach</a>
+              </li>
+              <li class="nav-item ">
                 <a class="nav-link" href="/talks/">Seminars / Talks / Posters</a>
               </li>
 
@@ -127,7 +130,7 @@
 <h2>2026</h2>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">DREAM: Dust pRoperties Explored Across galactic Metallicity boundaries <abbr class="badge">IRAM-30m</abbr>
+  <div class="prop-title">DREAM: Dust pRoperties Explored Across galactic Metallicity boundaries <abbr class="badge" style="background-color:#2980b9">IRAM-30m</abbr>
 </div>
   <div class="periodical">PI: Wonju Kim</div>
 </div>
@@ -153,19 +156,19 @@
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Exploring Dust Properties in the Outer Galaxy <abbr class="badge">IRAM-30m</abbr>
+  <div class="prop-title">Exploring Dust Properties in the Outer Galaxy <abbr class="badge" style="background-color:#2980b9">IRAM-30m</abbr>
 </div>
   <div class="periodical">PI: Wonju Kim</div>
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Impact of low-metallicity on the deuterium fractionation in the outer Galaxy <abbr class="badge">IRAM-30m</abbr>
+  <div class="prop-title">Impact of low-metallicity on the deuterium fractionation in the outer Galaxy <abbr class="badge" style="background-color:#2980b9">IRAM-30m</abbr>
 </div>
   <div class="periodical">PI: Agata Karska</div>
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Investigating the cosmic ray ionization rate in the outer Galaxy using HCO$^+$ and its isotopologues <abbr class="badge">YEBES</abbr>
+  <div class="prop-title">Investigating the cosmic ray ionization rate in the outer Galaxy using HCO$^+$ and its isotopologues <abbr class="badge" style="background-color:#ad00a8">YEBES</abbr>
 </div>
   <div class="periodical">PI: Miguel Figueira</div>
 </div>
@@ -235,7 +238,7 @@
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Physics and chemistry of star-forming clumps in the outer Galaxy: an OGHReS-selected sample <abbr class="badge">IRAM-30m</abbr>
+  <div class="prop-title">Physics and chemistry of star-forming clumps in the outer Galaxy: an OGHReS-selected sample <abbr class="badge" style="background-color:#2980b9">IRAM-30m</abbr>
 </div>
   <div class="periodical">PI: Agata Karska</div>
 </div>
@@ -249,7 +252,7 @@
 <h2>2022</h2>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Ammonia toward star-forming clumps in the outer Galaxy <abbr class="badge">Effelsberg</abbr>
+  <div class="prop-title">Ammonia toward star-forming clumps in the outer Galaxy <abbr class="badge" style="background-color:#ebe300">Effelsberg</abbr>
 </div>
   <div class="periodical">PI: Agata Karska</div>
 </div>
@@ -261,7 +264,7 @@
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Physics and chemistry of star-forming clumps in the outer Galaxy: an OGHReS-selected sample <abbr class="badge">IRAM-30m</abbr>
+  <div class="prop-title">Physics and chemistry of star-forming clumps in the outer Galaxy: an OGHReS-selected sample <abbr class="badge" style="background-color:#2980b9">IRAM-30m</abbr>
 </div>
   <div class="periodical">PI: Agata Karska</div>
 </div>
@@ -281,17 +284,17 @@
 </div>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 (PI: Leonardo Bronfman)}\vspace*{0.05cm <abbr class="badge" style="background-color:#c0392b">APEX</abbr>
+  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 <abbr class="badge" style="background-color:#c0392b">APEX</abbr>
 </div>
-  <div class="periodical">PI: </div>
+  <div class="periodical">PI: Leonardo Bronfman</div>
 </div>
 
 <h2>2015</h2>
 
 <div class="card mt-3 p-3">
-  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 (PI: Leonardo Bronfman)}\vspace*{0.05cm <abbr class="badge" style="background-color:#c0392b">APEX</abbr>
+  <div class="prop-title">Ionized region and star formation: characterizing the interaction of RCW 120 <abbr class="badge" style="background-color:#c0392b">APEX</abbr>
 </div>
-  <div class="periodical">PI: </div>
+  <div class="periodical">PI: Leonardo Bronfman</div>
 </div>
 
 </div>
@@ -362,6 +365,58 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.publications .card').forEach((el, i) => {
     el.style.animationDelay = `${Math.min(i * 0.15, 1)}s`;
+  });
+});
+</script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const colorMap = {"APEX": "#c0392b","IRAM-30m": "#2980b9","ALMA": "#27ae60","NOEMA": "#8e44ad","JCMT": "#d35400","YEBES": "#ad00a8","Effelsberg": "#ebe300"
+  };
+
+  const badges = document.querySelectorAll('.prop-title .badge');
+  const counts = {};
+  badges.forEach(b => {
+    const name = b.textContent.trim();
+    counts[name] = (counts[name] || 0) + 1;
+  });
+
+  const total = Object.values(counts).reduce((a, b) => a + b, 0);
+  const bar = document.getElementById('telescope-bar');
+  const legend = document.getElementById('telescope-legend');
+
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  sorted.forEach(([name, count]) => {
+    const pct = (count / total) * 100;
+
+    // Bar segment
+    const segment = document.createElement('div');
+    segment.style.width = `${pct}%`;
+    segment.style.backgroundColor = colorMap[name] || '#999';
+    segment.title = `${name}: ${count} (${pct.toFixed(1)}%)`;
+    bar.appendChild(segment);
+
+    // Legend entry
+    const entry = document.createElement('div');
+    entry.style.display = 'flex';
+    entry.style.alignItems = 'center';
+    entry.style.gap = '0.5em';
+    entry.style.fontSize = '0.9em';
+
+    const swatch = document.createElement('span');
+    swatch.style.width = '14px';
+    swatch.style.height = '14px';
+    swatch.style.borderRadius = '3px';
+    swatch.style.backgroundColor = colorMap[name] || '#999';
+    swatch.style.display = 'inline-block';
+
+    const label = document.createElement('span');
+    label.textContent = `${name} (${count})`;
+
+    entry.appendChild(swatch);
+    entry.appendChild(label);
+    legend.appendChild(entry);
   });
 });
 </script>

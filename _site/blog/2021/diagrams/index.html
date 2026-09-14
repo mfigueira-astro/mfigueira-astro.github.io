@@ -90,6 +90,9 @@
                 <a class="nav-link" href="/observing-proposals/">Observing Proposals</a>
               </li>
               <li class="nav-item ">
+                <a class="nav-link" href="/outreach/">Outreach</a>
+              </li>
+              <li class="nav-item ">
                 <a class="nav-link" href="/talks/">Seminars / Talks / Posters</a>
               </li>
 
@@ -229,6 +232,58 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.publications .card').forEach((el, i) => {
     el.style.animationDelay = `${Math.min(i * 0.15, 1)}s`;
+  });
+});
+</script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const colorMap = {"APEX": "#c0392b","IRAM-30m": "#2980b9","ALMA": "#27ae60","NOEMA": "#8e44ad","JCMT": "#d35400","YEBES": "#ad00a8","Effelsberg": "#ebe300"
+  };
+
+  const badges = document.querySelectorAll('.prop-title .badge');
+  const counts = {};
+  badges.forEach(b => {
+    const name = b.textContent.trim();
+    counts[name] = (counts[name] || 0) + 1;
+  });
+
+  const total = Object.values(counts).reduce((a, b) => a + b, 0);
+  const bar = document.getElementById('telescope-bar');
+  const legend = document.getElementById('telescope-legend');
+
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  sorted.forEach(([name, count]) => {
+    const pct = (count / total) * 100;
+
+    // Bar segment
+    const segment = document.createElement('div');
+    segment.style.width = `${pct}%`;
+    segment.style.backgroundColor = colorMap[name] || '#999';
+    segment.title = `${name}: ${count} (${pct.toFixed(1)}%)`;
+    bar.appendChild(segment);
+
+    // Legend entry
+    const entry = document.createElement('div');
+    entry.style.display = 'flex';
+    entry.style.alignItems = 'center';
+    entry.style.gap = '0.5em';
+    entry.style.fontSize = '0.9em';
+
+    const swatch = document.createElement('span');
+    swatch.style.width = '14px';
+    swatch.style.height = '14px';
+    swatch.style.borderRadius = '3px';
+    swatch.style.backgroundColor = colorMap[name] || '#999';
+    swatch.style.display = 'inline-block';
+
+    const label = document.createElement('span');
+    label.textContent = `${name} (${count})`;
+
+    entry.appendChild(swatch);
+    entry.appendChild(label);
+    legend.appendChild(entry);
   });
 });
 </script>

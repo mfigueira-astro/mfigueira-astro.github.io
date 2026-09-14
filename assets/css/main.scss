@@ -442,6 +442,10 @@ body:not(.pg-publications) .publications h2 {
   animation: fadeInUp 0.6s ease forwards;
 }
 
+[data-theme='dark'] .publications .card {
+  background-color: #1e0930; // a lighter navy than your dark bg, so cards stand out
+}
+
 // Custom: social icon images (About page)
 // -----------------------------------------------------------------------------
 .contact-icons img.social-icon-img {
@@ -480,3 +484,16 @@ body:not(.pg-publications) .publications h2 {
   word-break: break-word;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .bibliography li,
+  .publications .card,
+  .page-footer .contact-icons a {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.profile img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 8px solid #0076df;
+}
