@@ -9,7 +9,7 @@ description:
 
 <div class="publications">
 
-<p class="proposals-summary">32 talks/seminars (2015–2026).</p>
+<p class="proposals-summary">33 talks/seminars (2015–2026).</p>
 
 <h2>Seminars</h2>
 
@@ -50,6 +50,12 @@ description:
 </div>
 
 <h2>Contributed talks</h2>
+
+<div class="card mt-3 p-3">
+  <div class="prop-title">Low-Frequency Radio Emission from HII Regions with LOFAR</div>
+  <div class="periodical">Workshop on Extragalactic Radio Astronomy: Science, Methods and New Frontiers, Warsaw, Poland (5-7 October 2026)</div>
+  <div class="periodical">2026</div>
+</div>
 
 <div class="card mt-3 p-3">
   <div class="prop-title">The OGHReS molecular cloud catalog</div>

@@ -192,6 +192,20 @@ body.cv .post-title::after {
   margin: 0 2rem;
 }
 
+body.page .post-title::before,
+body.page .post-title::after,
+body.cv .post-title::before,
+body.cv .post-title::after {
+  content: "";
+  flex: 1;
+  height: 180px;            /* set to your image's display height */
+  border: 0;               /* removes the grey line */
+  margin: 0 1rem;
+  margin-top: -10rem; 
+  transform: translateY(80px); 
+  background: url("/assets/img/star_bar.png") center / contain no-repeat;
+}
+
 .map-container {
   position: relative;
 }
@@ -497,3 +511,4 @@ body:not(.pg-publications) .publications h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   border: 8px solid #0076df;
 }
+
